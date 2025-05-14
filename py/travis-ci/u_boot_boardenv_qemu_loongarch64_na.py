@@ -1,5 +1,6 @@
 import os
 import travis_tftp
+import travis_http
 
 env__net_uses_pci = True
 env__net_dhcp_server = True
@@ -9,3 +10,5 @@ env__efi_loader_grub_file = travis_tftp.file2env('grub_loongarch64.efi')
 env__efi_fit_tftp_file = {
     "dn" : os.environ['UBOOT_TRAVIS_BUILD_DIR'],
 }
+
+env__efi_loader_httpprotocol_file = travis_http.file2env('lib/efi_loader/netdump.efi', 'lib/efi_loader/netdump.efi')
