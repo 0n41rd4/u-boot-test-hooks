@@ -7,3 +7,5 @@ env__net_tftp_readable_file = travis_tftp.file2env('u-boot')
 env__efi_loader_helloworld_file = travis_tftp.file2env('lib/efi_loader/helloworld.efi')
 
 env__efi_loader_httpprotocol_file = travis_http.file2env('lib/efi_loader/netdump.efi', 'lib/efi_loader/netdump.efi')
+
+env__efi_helloworld_net_http_test_skip = False

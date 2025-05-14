@@ -13,3 +13,5 @@ env__efi_fit_tftp_file = {
 }
 
 env__efi_loader_httpprotocol_file = travis_http.file2env('lib/efi_loader/netdump.efi', 'lib/efi_loader/netdump.efi')
+
+env__efi_helloworld_net_http_test_skip = False
